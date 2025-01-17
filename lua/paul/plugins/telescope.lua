@@ -163,4 +163,14 @@ return {
       telescope.load_extension("ui-select")
     end,
   },
+    {
+      'ThePrimeagen/harpoon',
+      config = function()
+         require("harpoon").setup()
+         vim.keymap.set('n', 'll', require("harpoon.mark").add_file, {})
+         vim.keymap.set('n', '<leader>tm', require("harpoon.ui").toggle_quick_menu, {})
+         vim.keymap.set('n', 'xx', require("harpoon.ui").nav_next, {})
+         vim.keymap.set('n', 'cc', require("harpoon.ui").nav_prev, {})
+      end
+    },
 }
