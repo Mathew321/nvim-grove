@@ -9,8 +9,7 @@ sudo apt update
 sudo apt install -y ninja-build libtool autoconf cmake g++ pkg-config lua5.1 liblua5.1-0-dev libuv1-dev libtermkey-dev libvterm-dev gettext
 ```
 
-Steps to Build Neovim:
-Clone the Neovim repository:
+## Steps to Build Neovim:
 
 Clone the official Neovim repository from GitHub.
 ```
