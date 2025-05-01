@@ -2,8 +2,8 @@
 If you're using Ubuntu or any other Debian-based distribution (which uses apt), you can install the required dependencies and build Neovim with the following steps:
 
 ## Prerequisites:
-Install the necessary build dependencies:
 
+Install the necessary build dependencies:
 ```
 sudo apt update
 sudo apt install -y ninja-build libtool autoconf cmake g++ pkg-config lua5.1 liblua5.1-0-dev libuv1-dev libtermkey-dev libvterm-dev gettext
@@ -45,3 +45,9 @@ Additional Notes:
 You can skip the Lua and other optional dependencies if you don't need them, but enabling them will provide a richer experience.
 
 If you encounter any issues, make sure your system is up-to-date, and dependencies are correctly installed.
+
+## Exta's
+You can also install both the clipboards for X11 and Wayland to make yanking with unnamedplus possible:
+```
+sudo apt install wl-clipboard xclip
+```
